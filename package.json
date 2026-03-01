@@ -1,0 +1,26 @@
+{
+  "name": "cardano-governance-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "rm -rf .next tsconfig.tsbuildinfo && next dev",
+    "dev:reset": "rm -rf .next tsconfig.tsbuildinfo && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "scrape:once": "tsx scripts/run-scraper.ts --once",
+    "scrape:daemon": "tsx scripts/run-scraper.ts --daemon"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "tsx": "4.16.2",
+    "typescript": "5.5.3"
+  }
+}
